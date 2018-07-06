@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetarium-About</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/dh-row-text-image-right-responsive.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Search-Form.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">Planetarium</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="images.html">Images</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Search.html">SEARCH</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="about-us.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="create-planet.html">CREATE PLANET</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block about-us">
+            <div class="container" style="background-image:url(&quot;assets/img/SpaceBackground.jpg&quot;);">
+                <div class="block-heading">
+                    <h2 class="text-info">About Planetarium</h2>
+                    <p style="color:rgb(203,255,252);">Planetarium is a web application that stores and retrieves planet information from a database. Users may search for planet information or add their own planets to the mix!</p>
+                </div>
+                <div class="row justify-content-center" style="background-image:url(&quot;assets/img/SpaceBackground.jpg&quot;);">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center">
+                            <div class="card-body info">
+                                <h4 class="card-title">Backed By AWS</h4>
+                                <p class="card-text" style="color:rgb(0,0,0);">The website itself is stored on an Amazon s3 bucket and deployed through a virtual http server. &nbsp;The database utilizes the DynamoDB service availible on AWS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center">
+                            <div class="card-body info">
+                                <h4 class="card-title">Highly Availible</h4>
+                                <p class="card-text" style="color:rgb(0,0,0);">Information is provided fast and efficiently using a Content Delivery Network service avilible on AWS called Cloudfront. The website is also backed by an AWS Elastic Load Balancer and Auto Scaling.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center">
+                            <div class="card-body info">
+                                <h4 class="card-title">Secure</h4>
+                                <p class="card-text" style="color:rgb(0,0,0);">HTTP server is protected within a private network and secured behind a bastion.&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Table-with-search.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

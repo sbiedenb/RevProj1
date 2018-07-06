@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetarium-Images</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/dh-row-text-image-right-responsive.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Search-Form.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">Planetarium</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="images.html">Images</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Search.html">SEARCH</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="create-planet.html">CREATE PLANET</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block features">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Images</h2>
+                    <p style="color:rgb(0,0,0);">See what your favorite planet looks like! Search our database for planets by name.</p>
+                    <form class="search-form">
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input id="picSearch" class="form-control" type="text" placeholder="I am looking for..">
+                            <div class="input-group-append"><button id="searchBtn" class="btn btn-light" type="button">Search </button></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="row clearmargin clearpadding row-image-txt">
+                        <div id="image" class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-image:url(&quot;assets/img/spaceBackground.jpg&quot;);background-size:cover;height:400px;background-position:center;">
+                            <div></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding:20px;">
+                            <h1 id="planetName">Planet Name</h1>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel lorem a lectus finibus bibendum ut sagittis diam. Nunc egestas nulla in elit congue, id pellentesque ex semper. Aenean euismod tellus tincidunt massa eleifend,
+                                a efficitur lectus ultricies. Aliquam bibendum et leo quis consectetur. Integer consequat consequat mauris, id porttitor sem feugiat eu. Proin ac neque eu nisi viverra mattis. Curabitur molestie lectus ac sollicitudin faucibus.
+                                Duis congue ipsum eget justo egestas blandit.</p>
+                            <p>Distance from Earth(mil km): </p>
+                            <p id="distance"></p>
+                            <p id="days"></p>
+                            <h1>Travel Time</h1>
+                            <div style="text-align:center">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">speed (m/s)</span></div><input id="speed" class="form-control" type="text">
+                                    <div class="input-group-append"></div>
+                                </div><button id="calculate" class="btn btn-light btn-lg" type="button">Calculate</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Table-with-search.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/getPic.js"></script>
+    <script src="assets/js/calc.js"></script>
+    <script>document.getElementById('searchBtn').addEventListener('click', getPic);</script>
+    <script>document.getElementById('calculate').addEventListener('click', calc);</script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetarium-Create</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/dh-row-text-image-right-responsive.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Search-Form.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">Planetarium</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="images.html">Images</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Search.html">SEARCH</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="create-planet.html">CREATE PLANET</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page contact-us-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Create Planet</h2>
+                    <p style="color:rgb(0,0,0);">Create a new planet to add to our collection of planets!</p>
+                    <p id="return" style="font-size: 20px;color:darkorange"></p>
+                </div>
+                <form>
+                    <div class="form-group"><label>Name</label><input id="name" class="form-control" type="text"></div>
+                    <div class="form-group"><label>System</label><input id="system" class="form-control" type="text"></div>
+                    <div class="form-group"><label>Distance From Earth (million km)</label><input id="distance" class="form-control" type="text"></div>
+                    <div class="form-group"><label>Habbitable?</label>
+                        <select id="habitable">
+                            <option value="True">True</option>
+                            <option value="False">False</option>
+                        </select>
+                        <!-- <div class="dropdown"><button id="habitable" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Dropdown </button>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation">True</a><a class="dropdown-item" role="presentation">False</a></div>
+                        </div> -->
+                    </div>
+                    <!--
+                    <div class="form-group"><label>Upload Picture</label><input id="fileInput" type="file"></div>
+                    -->
+                    <div class="form-group"><button id="create" class="btn btn-primary btn-block" type="button">Send</button></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Table-with-search.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/createPlanet.js"></script>
+    <script>window.onload = () => {document.getElementById('create').addEventListener('click', createPlanet);}</script>
+</body>
+
+</html>
