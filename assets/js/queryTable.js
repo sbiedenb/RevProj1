@@ -33,7 +33,6 @@ function getPlanets() {
 
 function presentPlanet(data) {
     // EXTRACT VALUE FOR HTML HEADER. 
-    // ('Book ID', 'Book Name', 'Category' and 'Price')
     var col = [];
     for (var i = 0; i < data.length; i++) {
         for (var key in data[i]) {
@@ -74,36 +73,3 @@ function presentPlanet(data) {
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
 }
-
-//Present all EC2
-// function presentPlanet(data) {
-//     //Get customer list node
-//     let searchTable = document.getElementById("ec2List");
-
-//     //Clean customer list
-//     searchTable.innerHTML = "";
-
-//     //Iterate over all EC2
-//     data.forEach((planet) => {
-//         //Creating node of <li>
-//         //let ec2Node = document.createElement("li");
-
-//         //Add class for styling <li class="something">
-//         //You can access any HTML fields (id might be useful)
-//         //ec2Node.className = "list-group-item";
-
-//         //Creating innerHTML object, adding customer name to it.
-//         //<li class="something">[creating this object]</li>
-//         let ec2NodeText = document.createTextNode(`${planet.id} => ${planet.name}`);
-
-//         //Append innerHTML to the customerNode
-//         //<li class="something">Perez, Julio</li>
-//         ec2Node.appendChild(ec2NodeText);
-
-//         //Finally, we append the new customerNode to the customerList
-//         //<ul id="ec2List">
-//         //<li class="something">Something</li>
-//         //</ul>
-//         ec2List.appendChild(ec2Node);
-//     });
-// }
